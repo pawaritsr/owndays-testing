@@ -1,0 +1,85 @@
+.share-main{
+    width: 100%;
+    height: 60vh;
+}
+
+.share-container {
+  width: 100%;
+  height: 45vh;
+  background-image: url("../../../../public/assets/images/news-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-left: 30rem;
+
+  gap: 30px;
+}
+
+.share-title {
+  font-size: 2.5rem;
+  line-height: 41px;
+  letter-spacing: 0.333333px;
+  margin-bottom: 1.5rem;
+}
+
+.share-app{
+  display: flex;
+  gap: 50px;
+}
+
+.share-app-icon{
+  width: 60px;
+  height: 60px;
+}
+
+.share-app-icon > svg{
+  width: 35px;
+  height: 35px;
+  fill: var(--background);
+}
+
+.noritake-copyright{
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 4rem;
+  line-height: 41px;
+  letter-spacing: 0.333333px;
+}
+
+@media (max-width: 1200px) {
+  .share-container{
+    padding-left: 25rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .share-container{
+    padding-left: 20rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .share-container{
+    padding-left: 15rem;
+  }
+}
+
+@media (max-width: 769px) {
+  .share-container{
+    padding-left: 12rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .share-container{
+    padding-left: 0rem;
+    align-items: center;
+    gap: 15px;
+    margin-top: 5rem;
+  }
+}

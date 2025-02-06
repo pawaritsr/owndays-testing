@@ -1,0 +1,71 @@
+.about-container {
+  width: 100%;
+  height: 50vh;
+  padding-top: 3rem;
+  padding-left: 12rem;
+  padding-right: 12rem;
+  margin-top: 5rem;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  line-height: 41px;
+  letter-spacing: 0.333333px;
+  margin-bottom: 1.5rem;
+}
+
+.about-noritake,
+.about-detail {
+  width: 50%;
+}
+
+.about-text > svg {
+  border: 2px solid #000;
+  width: 30px;
+  height: 30px;
+  border-radius: 0.5rem;
+}
+
+.about-detail > p {
+  line-height: 32px;
+  letter-spacing: 0.33333px;
+}
+
+.about-box {
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  .about-container {
+    padding-inline: 10rem;
+  }
+}
+
+@media (max-width: 1025px) {
+  .about-container {
+    padding-inline: 5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    padding-inline: 3rem;
+    padding-top: 2rem;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-container {
+    height: auto;
+  }
+  .about-box {
+    flex-direction: column;
+  }
+
+  .about-noritake,
+  .about-detail {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}

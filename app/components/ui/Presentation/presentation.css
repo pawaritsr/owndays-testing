@@ -1,0 +1,123 @@
+.presentation-main {
+  width: 100%;
+  height: calc(86vh - 27px);
+  position: relative;
+}
+
+.presentation-container {
+  width: 100%;
+  height: 85vh;
+  background-image: url("../../../../public/assets/images/presentation-bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-inline: 10rem;
+}
+
+.presentation-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.font-main {
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.font-btn-main {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.font-btn-main > svg {
+  width: 13px;
+  height: 13px;
+  fill: var(--background);
+  margin-inline: 0.25rem;
+}
+
+.container_mouse{
+  position: absolute;
+  bottom: 0%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mouse-btn {
+  margin: 10px auto;
+  width: 30px;
+  height: 60px;
+  border-radius: 20px;
+  display: flex;
+}
+
+.mouse-scroll {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: linear-gradient(170deg, rgba(0, 0, 0, 0.918), rgb(0, 0, 0));
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite;
+}
+
+.scroll-text{
+  user-select: none;
+  cursor: pointer;
+}
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
+
+@media (max-width: 900px) {
+  .presentation-container {
+    flex-direction: column;
+    padding-inline: 0;
+    justify-content: center;
+  }
+
+  .presentation-container > img {
+    width: auto;
+    height: auto;
+    background-size: contain;
+    margin-bottom: 2rem;
+  }
+
+  .presentation-title {
+    gap: 55px;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .presentation-main {
+    height: calc(86vh - 27px);
+  }
+
+  .presentation-container {
+    height: 80vh;
+  }
+  .presentation-title {
+    gap: 17.5px;
+  }
+}
