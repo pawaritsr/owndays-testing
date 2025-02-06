@@ -84,7 +84,11 @@
 }
 
 @media (max-width: 600px) {
+  .news-main {
+    height: 520px;
+  }
   .news-container{
     padding-inline: 1rem;
+    height: 500px;
   }
 }

@@ -110,6 +110,7 @@
     padding-right: 0rem;
     flex-direction: column;
     flex-wrap: nowrap;
+    height: 850px;
   }
 
   .story-box,
